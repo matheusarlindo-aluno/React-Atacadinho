@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FormUser from './components/FormUser';
+import ListUser from './components/ListUser';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path='/' element={<App/>}></Route>
         <Route path='/create-user' element={<FormUser/>}></Route>
+        <Route path='/list-user' element={<ListUser/>}></Route>
       </Routes>
     </BrowserRouter>
     
