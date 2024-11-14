@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 function ListarItens(){     
     const [items, setItems] = useState([]);
 
-
+    
     async function listItems() {
         const api = await fetch("http://localhost:8090/produto/listproduct")
         const resposta = await api.json()
@@ -26,21 +26,29 @@ function ListarItens(){
 
     return(
         <div>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Quantidade</th>
-                </tr>
+
+            <h1>Carrinho de compras</h1>
+            <table className='table'>
+                <thead>
+                    <tr>
+                        <th className='table-titulo '>Name</th>
+                        <th className='table-titulo'>Quantidade</th>
+                        <th className='table-titulo'></th>
+                    </tr>
+                </thead>
                 <tbody>
                     {items.map((Item) => (
                         <tr>
-                            <th>{Item.name}</th>
-                            <th>{Item.quantidade}</th>
-                            <input className='table-button' type='button' value="Remover"/>
+                            <th className='item-table'>{Item.name}</th>
+                            <th className='item-table'>{Item.quantidade}</th>
+                            <th><input className='table-button item-table' type='button' value="Remover"/></th>
                         </tr>
                     ))}
                 </tbody>
             </table>
+
+            <input className="buy-button" type="button" value="Comprar" />
+
         </div>
     )
 }
