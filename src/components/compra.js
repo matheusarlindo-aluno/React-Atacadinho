@@ -392,7 +392,7 @@ function Compra() {
             </SwiperSlide>
         </Swiper>
 
-        <h2 className='categoria-produto'> Alimentos Perecíveis/Embalados</h2>
+        <h2 className='categoria-produto'> Higiene</h2>
         <Swiper
             slidesPerView={3}
             spaceBetween={30}
