@@ -475,7 +475,7 @@ function Compra() {
 
             <SwiperSlide> 
                 <div className='info product-card'>
-                    <h2>Condicionador</h2> className="categoria-produto"
+                    <h2>Condicionador</h2>
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
