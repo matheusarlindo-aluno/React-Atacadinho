@@ -73,7 +73,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Maça")}></input>
                 </div>
             </SwiperSlide>
 
@@ -83,7 +83,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Banana")}></input>
                 </div>
             </SwiperSlide>
 
@@ -93,7 +93,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Laranja")}></input>
                 </div>
             </SwiperSlide>
 
@@ -103,7 +103,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Tomate")}></input>
                 </div>
             </SwiperSlide>
 
@@ -113,7 +113,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("ALface")}></input>
                 </div>
             </SwiperSlide>
 
@@ -123,7 +123,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Cenoura")}></input>
                 </div>
             </SwiperSlide>
 
@@ -133,7 +133,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Batata")}></input>
                 </div>
             </SwiperSlide>
 
@@ -143,7 +143,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Cebola")}></input>
                 </div>
             </SwiperSlide>
 
@@ -153,7 +153,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Abobrinha")}></input>
                 </div>
             </SwiperSlide>
 
@@ -163,7 +163,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Pimentão")}></input>
                 </div>
             </SwiperSlide>
         </Swiper>
@@ -185,7 +185,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Carne bovina")}></input>
                 </div>
             </SwiperSlide>
             
@@ -195,7 +195,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Carne suína")}></input>
                 </div>
             </SwiperSlide>
 
@@ -205,7 +205,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Frango")}></input>
                 </div>
             </SwiperSlide>
 
@@ -215,7 +215,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Linguiça")}></input>
                 </div>
             </SwiperSlide>
 
@@ -225,7 +225,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Bacon")}></input>
                 </div>
             </SwiperSlide>
 
@@ -235,7 +235,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Presunto")}></input>
                 </div>
             </SwiperSlide>
 
@@ -245,7 +245,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Queijo")}></input>
                 </div>
             </SwiperSlide>
 
@@ -255,7 +255,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Salame")}></input>
                 </div>
             </SwiperSlide>
 
@@ -265,7 +265,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Ovo (dúzia)")}></input>
                 </div>
             </SwiperSlide>
 
@@ -275,7 +275,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Peixe")}></input>
                 </div>
             </SwiperSlide>
         </Swiper>
@@ -327,7 +327,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Farinha")}></input>
                 </div>
             </SwiperSlide>
 
@@ -337,7 +337,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Óleo de soja")}></input>
                 </div>
             </SwiperSlide>
 
@@ -347,7 +347,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Açúcar")}></input>
                 </div>
             </SwiperSlide>
 
@@ -357,7 +357,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Café")}></input>
                 </div>
             </SwiperSlide>
 
@@ -367,7 +367,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Leite em pó")}></input>
                 </div>
             </SwiperSlide>
 
@@ -377,7 +377,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Chá")}></input>
                 </div>
             </SwiperSlide>
 
@@ -387,7 +387,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Achocolatado")}></input>
                 </div>
             </SwiperSlide>
         </Swiper>
@@ -409,7 +409,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Sabão em pó")}></input>
                 </div>
             </SwiperSlide>
             
@@ -419,7 +419,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Detergente")}></input>
                 </div>
             </SwiperSlide>
 
@@ -429,7 +429,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Creme dental")}></input>
                 </div>
             </SwiperSlide>
 
@@ -439,7 +439,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Desinfetante")}></input>
                 </div>
             </SwiperSlide>
 
@@ -449,7 +449,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Esponja")}></input>
                 </div>
             </SwiperSlide>
 
@@ -459,7 +459,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Desodorante")}></input>
                 </div>
             </SwiperSlide>
 
@@ -469,7 +469,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Shampoo")}></input>
                 </div>
             </SwiperSlide>
 
@@ -479,7 +479,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Condicionador")}></input>
                 </div>
             </SwiperSlide>
 
@@ -489,7 +489,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Fio dental")}></input>
                 </div>
             </SwiperSlide>
 
@@ -499,7 +499,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Sabonete")}></input>
                 </div>
             </SwiperSlide>
         </Swiper>
@@ -521,7 +521,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Água miner")}></input>
                 </div>
             </SwiperSlide>
             
@@ -531,7 +531,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Refrigerante")}></input>
                 </div>
             </SwiperSlide>
 
@@ -541,7 +541,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Sucos")}></input>
                 </div>
             </SwiperSlide>
 
@@ -551,7 +551,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Leite")}></input>
                 </div>
             </SwiperSlide>
 
@@ -561,7 +561,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinho")}></input>
                 </div>
             </SwiperSlide>
 
@@ -571,7 +571,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Cerveja")}></input>
                 </div>
             </SwiperSlide>
 
@@ -581,7 +581,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Chá gelado")}></input>
                 </div>
             </SwiperSlide>
 
@@ -591,7 +591,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Água de coco")}></input>
                 </div>
             </SwiperSlide>
 
@@ -601,7 +601,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Energético")}></input>
                 </div>
             </SwiperSlide>
 
@@ -611,7 +611,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Whisky")}></input>
                 </div>
             </SwiperSlide>
         </Swiper>
