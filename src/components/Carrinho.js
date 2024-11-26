@@ -19,13 +19,17 @@ function ListarItens(){
 
     }
 
+    function VoltaCompra() {
+        window.location.href = "http://localhost:3000/compra"
+    }
+
     useEffect(() => {
         listItems()
     }, []);
 
 
     return(
-        <div>
+        <div className='carrinho'>
 
             <h1>Carrinho de compras</h1>
             <table className='table'>
@@ -47,7 +51,7 @@ function ListarItens(){
                 </tbody>
             </table>
 
-            <input className="buy-button" type="button" value="Comprar" />
+            <input className="buy-button" type="button" value="Voltar a Comprar"  onClick={VoltaCompra}/>
 
         </div>
     )

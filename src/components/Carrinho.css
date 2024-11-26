@@ -1,57 +1,64 @@
+.carrinho {
+  text-align: center;
+}
+
 
 h1{
   text-align: center;
+  color: #F2CB05;
   }
   
-  table, tr, th {
+
+table, tr, th {
   border: 1px solid black;
-  }
+}
   
-  table {
+table {
   border-collapse: collapse;
   margin: auto;
   width: 60%;
-  background-color: #FFF;
-  }
+  background-color: #FCE09B;
+}
   
-  th, td{
+th, td{
   padding: 8px;
   text-align: center;
-  }
+}
 
-  .table-titulo {
-    background-color: rgb(16, 145, 55);
-    color: #FFF;
-    font-size: 1.5em;
-  }
+.table-titulo {
+  background-color: #f3ac29;
+  color: #000;
+  font-size: 1.5em;
+}
   
-  th{
+th{
   font-weight: bold;
-  }
+}
 
 
-  .table-button {
-    padding: 1em 2em;
-    background-color: rgb(16, 145, 55);
-    color: #FFF;
-    border-radius: 15px;
-    border: 2px solid #000;
-    cursor: pointer;
-    transition: all linear 190ms;
-    font-weight: 600;
-  }
-  
-
-
-.buy-button {
+.table-button {
   padding: 1em 2em;
-  background-color: rgb(16, 145, 55);
+  background-color: rgb(33, 121, 59);
   color: #FFF;
   border-radius: 15px;
   border: 2px solid #000;
   cursor: pointer;
   transition: all linear 190ms;
   font-weight: 600;
+}
+  
+
+
+.buy-button {
+  padding: 2em 5em;
+  background-color: rgb(33, 121, 59);
+  color: #FFF;
+  border-radius: 15px;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: all linear 190ms;
+  font-weight: 600;
+  margin: 2em;
   
 }
 

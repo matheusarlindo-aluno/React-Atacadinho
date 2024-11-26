@@ -2,6 +2,14 @@
 import './compra.css';
 import carrinho from './carrinho-de-compras-de-design-xadrez.png'
 import { useState } from 'react';
+import React, { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper/modules';
+
 
 
 function Compra() {
@@ -32,16 +40,258 @@ function Compra() {
 
     }
 
+    
+
     return (
+
+        <>
+        
+
+
+        
     <div>
         <nav className="cabecalho">
-            <h1 className="titulo_link">Atacadinho</h1>
-            <a href='/carrinho-compra' ><img className='img_link' src={carrinho} alt="Descrição da imagem"/></a>
+            <h1 className="titulo_cabecalho">Atacadinho</h1>
+            <a href='/carrinho-compra' ><img className='img_link' src={carrinho} alt="Descrição da imagem"/></a>   
         </nav>
 
-    <div className='container'>
-        <div className='carrossel'>
-            <div className="item">
+        <h2 className="categoria-produto">Hortifruti</h2>
+
+        <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+            clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+        >
+            
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Maça</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Banana</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Laranja</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Tomate</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Alface</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Cenoura</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Batata</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide> 
+                <div className='info product-card'>
+                    <h2>Cebola</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Abobrinha</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Pimentão</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+        </Swiper>
+
+        <h2 className='categoria-produto'>Carnes e Frios</h2>
+        <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+            clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+        >
+            
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Carne bovina</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
+                </div>
+            </SwiperSlide>
+            
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Carne suína</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Frango</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Linguiça</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Bacon</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Presunto</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Queijo</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide> 
+                <div className='info product-card'>
+                    <h2>Salame</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Ovo (dúzia)</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Peixe</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+        </Swiper>
+
+        <h2 className='categoria-produto'>Mercearia (Produtos Secos e Não Perecíveis)</h2>
+        <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+            clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+        >
+            
+            <SwiperSlide>
                 <div className='info product-card'>
                     <h2>Arroz</h2>
                     <p className="price">R$ 25,00</p>
@@ -49,6 +299,9 @@ function Compra() {
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
                     <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
                 </div>
+            </SwiperSlide>
+            
+            <SwiperSlide>
                 <div className='info product-card'>
                     <h2>Feijão</h2>
                     <p className="price">R$ 25,00</p>
@@ -56,6 +309,9 @@ function Compra() {
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
                     <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
                 </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
                 <div className='info product-card'>
                     <h2>Macarrão</h2>
                     <p className="price">R$ 25,00</p>
@@ -63,26 +319,308 @@ function Compra() {
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
                     <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
                 </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
                 <div className='info product-card'>
-                    <h2>Azeite</h2>
+                    <h2>Farinha</h2>
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
                     <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
                 </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
                 <div className='info product-card'>
-                    <h2>Vinagre</h2>
+                    <h2>Óleo de soja</h2>
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
                     <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
-                    {/* <input className='botao' type='button' value="Cadastrar" onClick={CadastroUser}/> */}
                 </div>
-            </div>
-        </div>
-    </div>      
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Açúcar</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Café</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide> 
+                <div className='info product-card'>
+                    <h2>Leite em pó</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Chá</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Achocolatado</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+        </Swiper>
+
+        <h2 className='categoria-produto'> Alimentos Perecíveis/Embalados</h2>
+        <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+            clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+        >
+            
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Sabão em pó</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
+                </div>
+            </SwiperSlide>
+            
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Detergente</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Creme dental</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Desinfetante</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Esponja</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Desodorante</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Shampoo</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide> 
+                <div className='info product-card'>
+                    <h2>Condicionador</h2> className="categoria-produto"
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Fio dental</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Sabonete</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+        </Swiper>
+
+        <h2 className="categoria-produto">Bebidas</h2>
+        <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+            clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+        >
+            
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Água miner</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Arroz")}></input>
+                </div>
+            </SwiperSlide>
+            
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Refrigerante</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Feijão")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Sucos</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Macarrão")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Leite</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Azeite")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Vinho</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Cerveja</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Chá gelado</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide> 
+                <div className='info product-card'>
+                    <h2>Água de coco</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Energético</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='info product-card'>
+                    <h2>Whisky</h2>
+                    <p className="price">R$ 25,00</p>
+                    <p>Quantidade:</p>
+                    <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Vinagre")}></input>
+                </div>
+            </SwiperSlide>
+        </Swiper>
+
+        
+
 
     </div>
+    </>
     );
 }
 
