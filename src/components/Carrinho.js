@@ -2,10 +2,34 @@ import './Carrinho.css'
 import { useEffect, useState } from 'react'
 
 
+
 function ListarItens(){     
     const [items, setItems] = useState([]);
 
-    
+    async function ComprarProduto(productName, quantidade) {
+
+        let api = await fetch("http://localhost:8090/produto/comprar", {
+            method : "POST",
+            body:JSON.stringify({
+                "name":productName,
+                "quantidade":quantidade
+            }),
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
+
+        if(api.ok){
+            alert("Item Comprado!")
+
+        }
+        else {
+            alert("Erro ao listar produto");
+        }
+
+
+    }
+
     async function listItems() {
         const api = await fetch("http://localhost:8090/produto/listproduct")
         const resposta = await api.json()
@@ -46,6 +70,7 @@ function ListarItens(){
                             <th className='item-table'>{Item.name}</th>
                             <th className='item-table'>{Item.quantidade}</th>
                             <th><input className='table-button item-table' type='button' value="Remover"/></th>
+                            <th><input className='table-button item-table' type='button' value="Comprar" onClick={() => ComprarProduto(Item.name, Item.quantidade)}/></th>
                         </tr>
                     ))}
                 </tbody>
