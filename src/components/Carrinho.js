@@ -30,6 +30,30 @@ function ListarItens(){
 
     }
 
+    async function Remover(productName, quantidade) {
+
+        let api = await fetch("http://localhost:8090/produto/delete", {
+            method : "POST",
+            body:JSON.stringify({
+                "name":productName,
+                "quantidade":quantidade
+            }),
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
+
+        if(api.ok){
+            alert("Item Removido!")
+
+        }
+        else {
+            alert("Erro ao listar produto");
+        }
+
+
+    }
+
     async function listItems() {
         const api = await fetch("http://localhost:8090/produto/listproduct")
         const resposta = await api.json()
@@ -69,7 +93,7 @@ function ListarItens(){
                         <tr>
                             <th className='item-table'>{Item.name}</th>
                             <th className='item-table'>{Item.quantidade}</th>
-                            <th><input className='table-button item-table' type='button' value="Remover"/></th>
+                            <th><input className='table-button item-table' type='button' value="Remover" onClick={() => Remover(Item.name, Item.quantidade)}/></th>
                             <th><input className='table-button item-table' type='button' value="Comprar" onClick={() => ComprarProduto(Item.name, Item.quantidade)}/></th>
                         </tr>
                     ))}
