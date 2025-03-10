@@ -2,23 +2,21 @@ import { useState } from 'react'
 import './AtualizarUser.css'
 
 function AtualizarUser(){
-    const [name, setNome] = useState('')
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
 
     async function dadosUser(){
         
-        if(name=== "" || email==="" || senha === ""){
+        if(email==="" || senha === ""){
             alert("Preencha todos os campos")
             return
         }
         
         // integrar com a vossa API
 
-        let api = await fetch("http://localhost:8090/usuario/atualizar",{
+        let api = await fetch("http://localhost:8090/usuario/atualizar/usuario",{
             method:"PUT",
             body:JSON.stringify({
-                "name":name,
                 "email":email,
                 "senha": senha,
                 "is_active":1
@@ -44,9 +42,6 @@ function AtualizarUser(){
             <div className='card'>
                 <form className='form'>
                     <h2>Atualizar Dados</h2>
-
-                    <label htmlFor='name'>Nome:</label>
-                    <input className='campo' type='text' id='name' name='name' placeholder='Digite seu nome' onChange={(e)=> setNome(e.target.value)}></input>
 
                     <label htmlFor='email'>E-mail:</label>
                     <input className='campo' type='text' id='email' name='email' placeholder='Digite seu e-mail' onChange={(e)=> setEmail(e.target.value)}></input>
