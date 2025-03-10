@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FormUser from './components/FormUser';
 import Carrinho from './components/Carrinho';
 import Compra from './components/compra';
+import AtualizarUser from './components/AtualizarUser';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +19,7 @@ root.render(
         <Route path='/create-user' element={<FormUser/>}></Route>
         <Route path='/carrinho-compra' element={<Carrinho/>}></Route>
         <Route path='/compra' element={<Compra/>}></Route>
+        <Route path='/atualizar-dados' element={<AtualizarUser/>}></Route>
 
       </Routes>
     </BrowserRouter>

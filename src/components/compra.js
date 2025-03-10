@@ -2,8 +2,9 @@
 import './compra.css';
 import carrinho from './carrinho-de-compras-de-design-xadrez.png'
 import { useState } from 'react';
-import React, { useRef } from 'react';
+// import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import configuracao from './configuracao-icon.png'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -52,7 +53,8 @@ function Compra() {
     <div>
         <nav className="cabecalho">
             <h1 className="titulo_cabecalho">Atacadinho</h1>
-            <a href='/carrinho-compra' ><img className='img_link' src={carrinho} alt="Descrição da imagem"/></a>   
+            <a className='icones' href='/carrinho-compra' ><img className='img_link' src={carrinho} alt="Descrição da imagem"/></a>
+            <a href='/atualizar-dados' ><img className='img_link' src={configuracao} alt="Descrição da imagem"/></a>
         </nav>
 
         <h2 className="categoria-produto">Hortifruti</h2>
@@ -113,7 +115,7 @@ function Compra() {
                     <p className="price">R$ 25,00</p>
                     <p>Quantidade:</p>
                     <input type="number"  min="1" max='1231231' id="quantity"  onChange={(e)=> setQuantidade(e.target.value)}/>
-                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("ALface")}></input>
+                    <input className="add-button" type='button' value='adicionar' onClick={() => AdicionarCompras("Alface")}></input>
                 </div>
             </SwiperSlide>
 
