@@ -15,9 +15,9 @@ function LoginUser(){
         // integrar com a vossa API
 
         let api = await fetch("http://localhost:8090/usuario/login",{
-            method:"PUT",
+            method:"POST",
             body:JSON.stringify({
-                "email":email,
+                "email": email,
                 "senha": senha,
                 "is_active":1
             }),
