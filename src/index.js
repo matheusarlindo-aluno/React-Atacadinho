@@ -8,6 +8,7 @@ import FormUser from './components/FormUser';
 import Carrinho from './components/Carrinho';
 import Compra from './components/compra';
 import AtualizarUser from './components/AtualizarUser';
+import LoginUser from './components/LoginUser';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
         <Route path='/carrinho-compra' element={<Carrinho/>}></Route>
         <Route path='/compra' element={<Compra/>}></Route>
         <Route path='/atualizar-dados' element={<AtualizarUser/>}></Route>
+        <Route path='/user-login' element={<LoginUser/>}></Route>
 
       </Routes>
     </BrowserRouter>
