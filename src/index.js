@@ -11,7 +11,7 @@ import AtualizarUser from './components/AtualizarUser';
 import LoginUser from './components/LoginUser';
 import LoginAdmin from "./components/LoginAdmin";
 import AdminUser from "./components/AdminUser";
-import criarProduto from "./components/criarProduto";
+import FormProduto  from "./components/criarProduto";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,7 +26,7 @@ root.render(
         <Route path='/user-login' element={<LoginUser/>}></Route>
         <Route path='/admin-login' element={<LoginAdmin/>}></Route>
         <Route path='/admin' element={<AdminUser/>}></Route>
-        <Route path='/criarProduto' element={<criarProduto/>}></Route>
+        <Route path='/criarProduto' element={<FormProduto/>}></Route>
       </Routes>
     </BrowserRouter>
     
