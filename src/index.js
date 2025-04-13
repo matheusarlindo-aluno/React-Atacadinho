@@ -9,7 +9,8 @@ import Carrinho from './components/Carrinho';
 import Compra from './components/compra';
 import AtualizarUser from './components/AtualizarUser';
 import LoginUser from './components/LoginUser';
-
+import LoginAdmin from "./components/LoginAdmin";
+import AdminUser from "./components/AdminUser";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,8 @@ root.render(
         <Route path='/compra' element={<Compra/>}></Route>
         <Route path='/atualizar-dados' element={<AtualizarUser/>}></Route>
         <Route path='/user-login' element={<LoginUser/>}></Route>
+        <Route path='/admin-login' element={<LoginAdmin/>}></Route>
+        <Route path='/admin' element={<AdminUser/>}></Route>
 
       </Routes>
     </BrowserRouter>
