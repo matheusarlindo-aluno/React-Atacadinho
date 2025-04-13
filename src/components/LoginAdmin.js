@@ -29,7 +29,7 @@ function LoginAdmin(){
 
         if(api.ok){
             alert("Atualização done")
-            window.location.href = "http://localhost:3000/usuario/admin"
+            window.location.href = "http://localhost:3000/admin"
             return
         }
 
