@@ -1,59 +1,82 @@
 import { useState } from 'react'
-import './LoginUser.css'
+import './FormUser.css'
 
-function LoginAdmin(){
-    const [email, setEmail] = useState('')
-    const [senha, setSenha] = useState('')
+function FormProduto(){
+    const [name, setName] = useState('')
+    const [categoria, setCategoria] = useState('')
+    const [quantidade, setQuantidade] = useState('')
+    const [valor, setValor] = useState('')
 
-    async function adminDados(){
-
-        if(email==="" || senha === ""){
+    async function criarProduto(){
+        if(name === "" || categoria === "" || quantidade === "" || valor === ""){
             alert("Preencha todos os campos")
             return
         }
 
-        // integrar com a vossa API
+        // Converter para números
+        const qtd = parseInt(quantidade)
+        const valorNum = parseFloat(valor)
 
-        let api = await fetch("http://localhost:8090/usuario/admin/login",{
+        if(isNaN(qtd) || isNaN(valorNum)){
+            alert("Quantidade e valor devem ser números válidos")
+            return
+        }
+
+        let api = await fetch("http://localhost:8090/produto/criarProduto",{
             method:"POST",
             body:JSON.stringify({
-                "email": email,
-                "senha": senha,
-                "is_active":1
+                "name": name,
+                "categoria": categoria,
+                "quantidade": qtd,
+                "valor": valorNum
             }),
             headers:{
                 'Content-Type':'application/json'
             }
         })
 
-
         if(api.ok){
-            alert("Atualização done")
-            window.location.href = "http://localhost:3000/admin"
+            alert("Produto cadastrado com sucesso!")
+            window.location.href = "http://localhost:3000/compra"
             return
         }
 
-        alert("Erro ao Atualizar os dados!!");
-
+        alert("Erro ao cadastrar o produto!");
     }
 
     return(
         <div className='page'>
             <div className='card'>
                 <form className='form'>
-                    <h2>Login</h2>
+                    <h2>Cadastrar Produto</h2>
 
-                    <label htmlFor='email'>E-mail:</label>
-                    <input className='campo' type='text' id='email' name='email' placeholder='Digite seu e-mail' onChange={(e)=> setEmail(e.target.value)}></input>
+                    <label htmlFor='name'>Nome do Produto:</label>
+                    <input className='campo' type='text' id='name' name='name'
+                           placeholder='Digite o nome do produto'
+                           onChange={(e)=> setName(e.target.value)} />
 
-                    <label htmlFor='password'>Senha:</label>
-                    <input className='campo' type='password' id='senha' name='senha' placeholder='Digite sua senha'  onChange={(e)=> setSenha(e.target.value)}></input>
+                    <label htmlFor='categoria'>Categoria:</label>
+                    <input className='campo' type='text' id='categoria' name='categoria'
+                           placeholder='Digite a categoria'
+                           onChange={(e)=> setCategoria(e.target.value)} />
 
-                    <input className='botao' type='button' value="Entrar" onClick={adminDados}/>
+                    <label htmlFor='quantidade'>Quantidade:</label>
+                    <input className='campo' type='number' id='quantidade' name='quantidade'
+                           placeholder='Digite a quantidade em estoque'
+                           onChange={(e)=> setQuantidade(e.target.value)}
+                           min="0" />
+
+                    <label htmlFor='valor'>Valor Unitário:</label>
+                    <input className='campo' type='number' id='valor' name='valor'
+                           placeholder='Digite o valor unitário'
+                           onChange={(e)=> setValor(e.target.value)}
+                           step="0.01" min="0" />
+
+                    <input className='botao' type='button' value="Cadastrar Produto" onClick={criarProduto}/>
                 </form>
             </div>
         </div>
     )
 }
 
-export default LoginAdmin
+export default FormProduto
