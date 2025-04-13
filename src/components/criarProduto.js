@@ -37,7 +37,7 @@ function FormProduto(){
 
         if(api.ok){
             alert("Produto cadastrado com sucesso!")
-            window.location.href = "http://localhost:3000/compra"
+            window.location.href = "http://localhost:3000/criarProduto"
             return
         }
 
