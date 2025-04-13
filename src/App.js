@@ -18,7 +18,7 @@ function App() {
             <h1>Bem vindo - App de vendas</h1>
             <input className='botao-cad' type='button' value="Se Cadastre" onClick={onClickCadastro} />
             <input className='botao-cad' type='button' value="Entrar na conta" onClick={onClickLogin} />
-            <input className='botao-admin' type='button' value="Acesso Admin" onClick={onClickAdmin} />
+            <input className='botao-cad' type='button' value="Acesso Admin" onClick={onClickAdmin} />
         </div>
     );
 }
