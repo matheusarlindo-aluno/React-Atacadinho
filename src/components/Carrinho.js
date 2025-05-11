@@ -12,7 +12,7 @@ function ListarItens(){
             method : "POST",
             body:JSON.stringify({
                 "name":productName,
-                "quantidade":quantidade
+                "quantidade":quantidade,      
             }),
             headers:{
                 'Content-Type':'application/json'
@@ -24,7 +24,7 @@ function ListarItens(){
 
         }
         else {
-            alert("Erro ao listar produto");
+            alert("Compra não efetuada.");
         }
 
 
