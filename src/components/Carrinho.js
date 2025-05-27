@@ -85,7 +85,6 @@ function ListarItens(){
                     <tr>
                         <th className='table-titulo '>Name</th>
                         <th className='table-titulo'>Quantidade</th>
-                        <th className='table-titulo'></th>
                     </tr>
                 </thead>
                 <tbody>
