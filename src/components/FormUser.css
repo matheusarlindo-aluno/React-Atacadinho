@@ -1,3 +1,18 @@
+.cabecalho_user {
+  position: fixed;
+  padding: 0 2.5em;
+
+}
+
+.back_button {
+  width: 3em;
+  padding: 0.5em 0.7em 0.5em 0.5em;
+  background-color: #FCE09B;
+  border: 1px solid #000;
+  border-radius: 34px;
+  margin-top: 1.8em;
+
+}
 
 .page {
   display: flex;

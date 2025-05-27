@@ -1,4 +1,6 @@
 import './Admin.css';
+import botaoVoltar from './voltar.png'
+
 
 function Admin() {
     function onClickCriarProduto() {
@@ -17,7 +19,11 @@ function Admin() {
     }
 
     return (
+
         <div className="App">
+            <nav className='cabecalho_user'>
+                <a href='/admin-login' ><img className='back_button' src={botaoVoltar} alt="Descrição da imagem"/></a>
+            </nav>
             <h1>Bem vindo ao Atacadinho Brasil </h1>
             <input className='botao-cad' type='button' value="Criar Produto" onClick={onClickCriarProduto} />
             <input className='botao-cad' type='button' value="Atualizar Produto" onClick={onClickAtualizarProduto} />

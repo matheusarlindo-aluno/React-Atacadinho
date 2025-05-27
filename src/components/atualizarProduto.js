@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import './FormUserAtualizar.css'
+import './atualizarProduto.css'
+import botaoVoltar from './voltar.png'
+
 
 function FormProdutoAtualizar(){
     const [name, setName] = useState('')
@@ -45,35 +47,40 @@ function FormProdutoAtualizar(){
     }
 
     return(
-        <div className='page'>
-            <div className='card'>
-                <form className='form'>
-                    <h2>Atualizar Produto</h2>
+        <div>
+            <nav className='cabecalho_user'>
+                <a href='/admin' ><img className='back_button' src={botaoVoltar} alt="Descrição da imagem"/></a>
+            </nav>
+            <div className='page'>
+                <div className='card'>
+                    <form className='form'>
+                        <h2>Atualizar Produto</h2>
 
-                    <label htmlFor='name'>Nome do Produto:</label>
-                    <input className='campo' type='text' id='name' name='name'
-                           placeholder='Digite o nome do produto'
-                           onChange={(e)=> setName(e.target.value)} />
+                        <label htmlFor='name'>Nome do Produto:</label>
+                        <input className='campo' type='text' id='name' name='name'
+                            placeholder='Digite o nome do produto'
+                            onChange={(e)=> setName(e.target.value)} />
 
-                    <label htmlFor='categoria'>Categoria:</label>
-                    <input className='campo' type='text' id='categoria' name='categoria'
-                           placeholder='Digite a categoria'
-                           onChange={(e)=> setCategoria(e.target.value)} />
+                        <label htmlFor='categoria'>Categoria:</label>
+                        <input className='campo' type='text' id='categoria' name='categoria'
+                            placeholder='Digite a categoria'
+                            onChange={(e)=> setCategoria(e.target.value)} />
 
-                    <label htmlFor='quantidade'>Quantidade:</label>
-                    <input className='campo' type='number' id='quantidade' name='quantidade'
-                           placeholder='Digite a quantidade em estoque'
-                           onChange={(e)=> setQuantidade(e.target.value)}
-                           min="0" />
+                        <label htmlFor='quantidade'>Quantidade:</label>
+                        <input className='campo' type='number' id='quantidade' name='quantidade'
+                            placeholder='Digite a quantidade em estoque'
+                            onChange={(e)=> setQuantidade(e.target.value)}
+                            min="0" />
 
-                    <label htmlFor='valor'>Valor Unitário:</label>
-                    <input className='campo' type='number' id='valor' name='valor'
-                           placeholder='Digite o valor unitário'
-                           onChange={(e)=> setValor(e.target.value)}
-                           step="0.01" min="0" />
+                        <label htmlFor='valor'>Valor Unitário:</label>
+                        <input className='campo' type='number' id='valor' name='valor'
+                            placeholder='Digite o valor unitário'
+                            onChange={(e)=> setValor(e.target.value)}
+                            step="0.01" min="0" />
 
-                    <input className='botao' type='button' value="Atualizar Produto" onClick={atualizarProduto}/>
-                </form>
+                        <input className='botao' type='button' value="Atualizar Produto" onClick={atualizarProduto}/>
+                    </form>
+                </div>
             </div>
         </div>
     )

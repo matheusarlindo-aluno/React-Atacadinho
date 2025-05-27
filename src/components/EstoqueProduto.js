@@ -9,7 +9,7 @@ function ListarItens(){
     const [items, setItems] = useState([]);
 
     async function listItems() {
-        const api = await fetch("http://localhost:8090/produto/listbestproducts")
+        const api = await fetch("http://localhost:8090/produto/listarstoque")
         const resposta = await api.json()
 
         if (api.ok) {
@@ -30,6 +30,7 @@ function ListarItens(){
 
     return(
         <div className='carrinho'>
+
             <nav className='cabecalho_user'>
                 <a href='/admin' ><img className='back_button' src={botaoVoltar} alt="Descrição da imagem"/></a>
             </nav>

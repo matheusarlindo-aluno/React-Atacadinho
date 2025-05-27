@@ -1,6 +1,6 @@
 .cabecalho {
   display: flex;
-  padding: 0 2.5em;
+  padding: 0 2em;
   gap: 2em;
 }
 
@@ -19,14 +19,13 @@
 }
 
 .icones {
-  padding: 0 0 0 82em;
+  padding: 0 0 0 77em;
 }
 
 .categoria-produto {
   color: #f3ac29;
   padding: 0  1.3em;
   /* #FCE09B */
-
 }
 
 

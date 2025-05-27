@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './LoginUser.css'
+import botaoVoltar from './voltar.png'
+
 
 function LoginAdmin(){
     const [email, setEmail] = useState('')
@@ -38,19 +40,24 @@ function LoginAdmin(){
     }
 
     return(
-        <div className='page'>
-            <div className='card'>
-                <form className='form'>
-                    <h2>Login</h2>
+        <div>
+            <nav className='cabecalho_user'>
+                <a href='/' ><img className='back_button' src={botaoVoltar} alt="Descrição da imagem"/></a>
+            </nav>
+            <div className='page'>
+                <div className='card'>
+                    <form className='form'>
+                        <h2>Login</h2>
 
-                    <label htmlFor='email'>E-mail:</label>
-                    <input className='campo' type='text' id='email' name='email' placeholder='Digite seu e-mail' onChange={(e)=> setEmail(e.target.value)}></input>
+                        <label htmlFor='email'>E-mail:</label>
+                        <input className='campo' type='text' id='email' name='email' placeholder='Digite seu e-mail' onChange={(e)=> setEmail(e.target.value)}></input>
 
-                    <label htmlFor='password'>Senha:</label>
-                    <input className='campo' type='password' id='senha' name='senha' placeholder='Digite sua senha'  onChange={(e)=> setSenha(e.target.value)}></input>
+                        <label htmlFor='password'>Senha:</label>
+                        <input className='campo' type='password' id='senha' name='senha' placeholder='Digite sua senha'  onChange={(e)=> setSenha(e.target.value)}></input>
 
-                    <input className='botao' type='button' value="Entrar" onClick={adminDados}/>
-                </form>
+                        <input className='botao' type='button' value="Entrar" onClick={adminDados}/>
+                    </form>
+                </div>
             </div>
         </div>
     )

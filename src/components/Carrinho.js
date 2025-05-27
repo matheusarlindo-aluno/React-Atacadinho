@@ -1,5 +1,7 @@
 import './Carrinho.css'
 import { useEffect, useState } from 'react'
+import botaoVoltar from './voltar.png'
+
 
 
 
@@ -67,9 +69,7 @@ function ListarItens(){
 
     }
 
-    function VoltaCompra() {
-        window.location.href = "http://localhost:3000/compra"
-    }
+
 
     useEffect(() => {
         listItems()
@@ -79,6 +79,9 @@ function ListarItens(){
     return(
         <div className='carrinho'>
 
+            <nav className='cabecalho_user'>
+                <a href='/compra' ><img className='back_button' src={botaoVoltar} alt="Descrição da imagem"/></a>
+            </nav>
             <h1>Carrinho de compras</h1>
             <table className='table'>
                 <thead>
@@ -98,8 +101,6 @@ function ListarItens(){
                     ))}
                 </tbody>
             </table>
-
-            <input className="buy-button" type="button" value="Voltar a Comprar"  onClick={VoltaCompra}/>
 
         </div>
     )

@@ -5,6 +5,8 @@ import { useState } from 'react';
 // import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import configuracao from './configuracao-icon.png'
+import botaoVoltar from './voltar.png'
+
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -45,7 +47,7 @@ function Compra() {
 
     return (
 
-        <>
+    <>
         
 
 
@@ -55,6 +57,7 @@ function Compra() {
             <h1 className="titulo_cabecalho">Atacadinho</h1>
             <a className='icones' href='/carrinho-compra' ><img className='img_link' src={carrinho} alt="Descrição da imagem"/></a>
             <a href='/atualizar-dados' ><img className='img_link' src={configuracao} alt="Descrição da imagem"/></a>
+            <a href='/user-login' ><img className='img_link' src={botaoVoltar} alt="Descrição da imagem"/></a>
         </nav>
 
         <h2 className="categoria-produto">Hortifruti</h2>
