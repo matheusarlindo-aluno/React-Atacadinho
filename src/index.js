@@ -14,7 +14,8 @@ import AdminUser from "./components/AdminUser";
 import FormProduto from "./components/criarProduto";
 import FormProdutoAtualizar from "./components/atualizarProduto";
 import HistoricoProduto from "./components/HistoricoProduto"; 
-import ListarItens from "./components/EstoqueProduto"; 
+import ListarItens from "./components/EstoqueProduto";
+import ListarUsuario from "./components/ListarUsuario"; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,6 +34,7 @@ root.render(
           <Route path='/atualizarProduto' element={<FormProdutoAtualizar/>}></Route>
           <Route path='/adminEstoque' element={<ListarItens/>}></Route>
           <Route path='/historico-produtos' element={<HistoricoProduto/>}></Route>
+          <Route path='/listarUsuario' element={<ListarUsuario/>}></Route>
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

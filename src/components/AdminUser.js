@@ -18,6 +18,10 @@ function Admin() {
         window.location.href = "http://localhost:3000/adminEstoque";
     }
 
+    function onClickListarUsuario() {
+        window.location.href = "http://localhost:3000/listarUsuario";
+    }
+
     return (
 
         <div className="App">
@@ -29,6 +33,7 @@ function Admin() {
             <input className='botao-cad' type='button' value="Atualizar Produto" onClick={onClickAtualizarProduto} />
             <input className='botao-cad' type='button' value="Historico de Vendas" onClick={onClickHistoricoProduto} />
             <input className='botao-cad' type='button' value="Estoque" onClick={onClickAdminEstoque} />
+            <input className='botao-cad' type='button' value="ListarUsuario" onClick={onClickListarUsuario} />
         </div>
     );
 }
